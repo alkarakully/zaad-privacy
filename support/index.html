@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Zaad</title>
+<meta name="description" content="Help for the Zaad app: prayer times, reminders, the Quran reader, downloads, and how to reach us.">
+<style>
+  :root { --ink: #17211e; --muted: #5b6660; --accent: #11594a; --gold: #b08a3e; --paper: #faf7ef; --rule: #e6e0d2; --card: #fffdf7; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Arabic", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { text-align: center; margin-bottom: 2rem; }
+  header .mark { color: var(--gold); font-size: 2.6rem; line-height: 1.2; }
+  header h1 { font-size: 1.6rem; margin: .25rem 0 0; color: var(--accent); }
+  header p { color: var(--muted); margin: .25rem 0 0; }
+  nav { display: flex; justify-content: center; gap: .5rem; margin: 1.25rem 0 2rem; }
+  nav a { padding: .45rem 1rem; border: 1px solid var(--rule); border-radius: 999px; text-decoration: none; color: var(--accent); font-weight: 600; }
+  nav a[aria-current="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+  section { display: none; }
+  section:target, section.active { display: block; }
+  h2 { font-size: 1.15rem; margin: 1.75rem 0 .5rem; color: var(--accent); }
+  .contact { background: var(--card); border: 1px solid var(--rule); border-radius: 18px; padding: 1rem 1.25rem; margin: 1rem 0 1.5rem; }
+  .contact a { color: var(--accent); font-weight: 600; }
+  details { border-top: 1px solid var(--rule); padding: .6rem 0; }
+  details:last-of-type { border-bottom: 1px solid var(--rule); }
+  summary { cursor: pointer; font-weight: 600; }
+  details p, details ul { margin: .5rem 0 .25rem; color: var(--ink); }
+  ul { padding-inline-start: 1.25rem; }
+  li { margin: .3rem 0; }
+  .ar { direction: rtl; text-align: right; font-size: 18px; }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 3rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark">زاد</div>
+    <h1>Zaad</h1>
+    <p>Your daily companion for Quran, Salah &amp; Dhikr</p>
+  </header>
+
+  <nav aria-label="Language">
+    <a href="#en" id="tab-en" aria-current="true">English</a>
+    <a href="#ar" id="tab-ar">العربية</a>
+  </nav>
+
+  <section id="en" class="active">
+    <h1 style="font-size:1.4rem">Support</h1>
+
+    <div class="contact">
+      <p style="margin:0">Write to <a href="mailto:info@tssdata.com">info@tssdata.com</a>. Tell us your phone model, its operating system version, and what you expected to happen. We read every message.</p>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <details>
+      <summary>The prayer times are a few minutes off from my mosque</summary>
+      <p>Mosques follow a calculation convention, and there are several. Open <strong>Settings → Calculation method</strong> and pick the one used where you live; the Asr method (Standard or Hanafi) is there too. If a single prayer still differs by a minute or two, <strong>Manual adjustments</strong> lets you nudge each prayer.</p>
+    </details>
+
+    <details>
+      <summary>Reminders do not arrive</summary>
+      <ul>
+        <li>Check that notifications are allowed for Zaad in your phone's settings. The app's home screen shows a banner when they are off.</li>
+        <li>On Android 12 and later, <strong>Alarms &amp; reminders</strong> must also be allowed, or reminders can be delayed by several minutes. Settings shows this and asks for it.</li>
+        <li>On iPhone, a Focus mode can silence apps. Zaad's prayer reminders are marked time-sensitive so they can break through, but a Focus can still be set to block them.</li>
+        <li>Reminders are scheduled a few days ahead while the app is open. If the app has not been opened for over a week, open it once and the schedule refills.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>The location is wrong, or I do not want to share it</summary>
+      <p>Prayer times need coordinates, and they never leave your phone. If you would rather not grant location access, go to <strong>Settings → Enter coordinates manually</strong> and type your city's latitude and longitude. The app will use them until you change them.</p>
+    </details>
+
+    <details>
+      <summary>The Hijri date is one day out</summary>
+      <p>The app calculates the date arithmetically; your country announces months by moon sighting, and the two can differ by a day. <strong>Settings → Hijri adjustment</strong> shifts the date by up to two days either way.</p>
+    </details>
+
+    <details>
+      <summary>The Qibla needle seems off</summary>
+      <p>Move the phone in a figure of eight a few times to calibrate the compass, and keep it away from magnets and metal, including some phone cases. The bearing shown as a number is calculated from your coordinates and is always correct; the needle depends on the phone's sensor.</p>
+    </details>
+
+    <details>
+      <summary>The printed mushaf page shows plain text instead of the page</summary>
+      <p>Each printed page uses its own font, downloaded a juz at a time when you first open it. By default that happens only on Wi‑Fi. Turn to the page while on Wi‑Fi, or change <strong>Settings → Automatic downloads</strong>. You can also download whole juz or the entire mushaf from <strong>Settings → Downloads</strong>.</p>
+    </details>
+
+    <details>
+      <summary>How much space does the app use, and how do I free it?</summary>
+      <p><strong>Settings → Downloads</strong> shows what the page fonts, tafsir and recitation audio are using, and lets you delete each. Recitation audio is kept as you listen so it plays offline afterwards; it stops filling itself at about 1 GB.</p>
+    </details>
+
+    <details>
+      <summary>Can I change the language?</summary>
+      <p>Yes. <strong>Settings → Language</strong> offers English, Arabic, or following the phone. The whole interface, including reminders, switches.</p>
+    </details>
+
+    <details>
+      <summary>Is my data collected?</summary>
+      <p>No. There is no account, no server of ours, and no analytics. Everything stays on your phone. The <a href="../privacy/">privacy policy</a> has the details.</p>
+    </details>
+
+    <h2>Reporting a problem</h2>
+    <p>Email <a href="mailto:info@tssdata.com">info@tssdata.com</a> with the phone model, the operating system version, the app version shown on the store page, and the steps that led to the problem. A screenshot helps.</p>
+  </section>
+
+  <section id="ar" class="ar" lang="ar" dir="rtl">
+    <h1 style="font-size:1.4rem">الدعم</h1>
+
+    <div class="contact">
+      <p style="margin:0">راسلنا على <a href="mailto:info@tssdata.com">info@tssdata.com</a>. اذكر طراز هاتفك وإصدار نظامه وما كنت تتوقع حدوثه. نقرأ كل رسالة.</p>
+    </div>
+
+    <h2>أسئلة شائعة</h2>
+
+    <details>
+      <summary>مواقيت الصلاة تختلف بدقائق عن مسجدي</summary>
+      <p>تعتمد المساجد طرق حساب مختلفة. افتح <strong>الإعدادات ← طريقة الحساب</strong> واختر الطريقة المعتمدة في بلدك، وستجد هناك أيضًا طريقة حساب العصر. وإن بقي فرق دقيقة أو دقيقتين في صلاة بعينها، فإن <strong>تعديلات يدوية</strong> تتيح لك ضبط كل صلاة على حدة.</p>
+    </details>
+
+    <details>
+      <summary>التنبيهات لا تصل</summary>
+      <ul>
+        <li>تأكد من السماح بالإشعارات لتطبيق زاد في إعدادات الهاتف. تظهر في الشاشة الرئيسية للتطبيق رسالة عندما تكون معطّلة.</li>
+        <li>في أندرويد 12 وما بعده يلزم أيضًا السماح بـ<strong>المنبّهات والتذكيرات</strong>، وإلا فقد تتأخر التنبيهات دقائق. تُظهر الإعدادات ذلك وتطلبه.</li>
+        <li>في آيفون قد يكتم وضع التركيز التطبيقات. تنبيهات الصلاة في زاد مصنّفة حساسة للوقت لتتجاوزه، لكن يمكن ضبط وضع التركيز لحجبها.</li>
+        <li>تُجدوَل التنبيهات لأيام مقبلة أثناء فتح التطبيق. إن لم يُفتح التطبيق لأكثر من أسبوع، افتحه مرة واحدة لتُستكمل الجدولة.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>الموقع غير صحيح، أو لا أريد مشاركته</summary>
+      <p>تحتاج مواقيت الصلاة إلى الإحداثيات، وهي لا تغادر هاتفك أبدًا. إن كنت تفضّل عدم منح إذن الموقع، فاذهب إلى <strong>الإعدادات ← إدخال الإحداثيات يدويًا</strong> وأدخل خط العرض وخط الطول لمدينتك، وسيعتمدها التطبيق حتى تغيّرها.</p>
+    </details>
+
+    <details>
+      <summary>التاريخ الهجري متقدم أو متأخر بيوم</summary>
+      <p>يحسب التطبيق التاريخ حسابيًا، بينما تعلن الدول دخول الشهر بالرؤية، وقد يختلف الاثنان بيوم. من <strong>الإعدادات ← تعديل التاريخ الهجري</strong> يمكنك تقديم التاريخ أو تأخيره حتى يومين.</p>
+    </details>
+
+    <details>
+      <summary>إبرة القبلة تبدو غير دقيقة</summary>
+      <p>حرّك الهاتف على شكل الرقم ٨ عدة مرات لمعايرة البوصلة، وأبعده عن المغناطيس والمعادن، ومنها بعض أغطية الهواتف. الاتجاه المعروض رقمًا محسوب من إحداثياتك وهو صحيح دائمًا، أما الإبرة فتعتمد على مستشعر الهاتف.</p>
+    </details>
+
+    <details>
+      <summary>صفحة المصحف تظهر نصًا عاديًا بدل الصفحة المطبوعة</summary>
+      <p>لكل صفحة مطبوعة خط خاص يُنزَّل جزءًا جزءًا عند فتحه أول مرة، وذلك افتراضيًا عبر Wi‑Fi فقط. افتح الصفحة وأنت متصل بشبكة Wi‑Fi، أو غيّر <strong>الإعدادات ← التنزيل التلقائي</strong>. ويمكنك أيضًا تنزيل أجزاء كاملة أو المصحف كله من <strong>الإعدادات ← التنزيلات</strong>.</p>
+    </details>
+
+    <details>
+      <summary>كم يستهلك التطبيق من المساحة، وكيف أفرّغها؟</summary>
+      <p>تعرض <strong>الإعدادات ← التنزيلات</strong> ما تستهلكه خطوط الصفحات والتفسير وملفات التلاوة، وتتيح حذف كل منها. تُحفَظ التلاوة أثناء الاستماع لتعمل لاحقًا دون اتصال، وتتوقف عن الامتلاء عند نحو ١ غيغابايت.</p>
+    </details>
+
+    <details>
+      <summary>هل يمكن تغيير اللغة؟</summary>
+      <p>نعم. من <strong>الإعدادات ← اللغة</strong> تختار العربية أو الإنجليزية أو لغة الهاتف، وتتبدّل الواجهة كلها بما فيها التنبيهات.</p>
+    </details>
+
+    <details>
+      <summary>هل تُجمع بياناتي؟</summary>
+      <p>لا. لا يوجد حساب ولا خادم تابع لنا ولا تحليلات. كل شيء يبقى على هاتفك. التفاصيل في <a href="../privacy/#ar">سياسة الخصوصية</a>.</p>
+    </details>
+
+    <h2>الإبلاغ عن مشكلة</h2>
+    <p>راسل <a href="mailto:info@tssdata.com">info@tssdata.com</a> مع ذكر طراز الهاتف وإصدار النظام وإصدار التطبيق كما يظهر في صفحة المتجر، والخطوات التي أدت إلى المشكلة. لقطة الشاشة تساعد.</p>
+  </section>
+
+  <footer>Zaad — زاد · <a href="../privacy/">Privacy policy</a></footer>
+</main>
+<script>
+  (function () {
+    var en = document.getElementById('en'), ar = document.getElementById('ar');
+    var tabs = { en: document.getElementById('tab-en'), ar: document.getElementById('tab-ar') };
+    function show() {
+      var which = location.hash === '#ar' ? 'ar' : 'en';
+      en.classList.toggle('active', which === 'en');
+      ar.classList.toggle('active', which === 'ar');
+      tabs.en.setAttribute('aria-current', which === 'en');
+      tabs.ar.setAttribute('aria-current', which === 'ar');
+      document.documentElement.lang = which;
+    }
+    window.addEventListener('hashchange', show);
+    show();
+  })();
+</script>
+</body>
+</html>
